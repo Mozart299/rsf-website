@@ -25,12 +25,12 @@ const Navigation = () => {
 
   return (
     <nav className="bg-blue-600 dark:bg-blue-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto max-w-7xl flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 text-xl font-bold">
           <Heart className="w-6 h-6" />
           <span>Charity Org</span>
         </Link>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           {menuItems.map((item) => (
             <Link key={item.href} href={item.href} className="hover:underline">
               {item.label}
@@ -44,7 +44,7 @@ const Navigation = () => {
           >
             {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="lg:hidden" onClick={toggleMenu}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -56,7 +56,7 @@ const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-16 left-0 right-0 bg-blue-600 dark:bg-blue-800 shadow-lg"
+            className="lg:hidden absolute top-16 left-0 right-0 bg-blue-600 dark:bg-blue-800 shadow-lg"
           >
             {menuItems.map((item) => (
               <Link
