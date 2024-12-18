@@ -25,7 +25,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="bg-gray-100 dark:bg-gray-800 py-4 text-center text-sm md:text-base">
-            <p>&copy; 2023 Charity Organization. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Charity Organization. All rights reserved.</p>
           </footer>
         </ThemeProvider>
       </body>
