@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
+import { motion } from 'framer-motion'
 
 export default function Programs() {
   const programs = [
@@ -27,26 +30,52 @@ export default function Programs() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6">Our Programs</h1>
-      <p className="mb-8">At Charity Org, we run various programs to address critical needs in our communities and around the world. Here are some of our key initiatives:</p>
+      <motion.h1 
+        className="text-3xl font-bold mb-6"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Our Programs
+      </motion.h1>
+      <motion.p 
+        className="mb-8"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        At Charity Org, we run various programs to address critical needs in our communities and around the world. Here are some of our key initiatives:
+      </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {programs.map((program, index) => (
-          <Card key={index}>
-            <CardHeader>
-              <CardTitle>{program.title}</CardTitle>
-              <CardDescription>{program.description}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>{program.details}</p>
-            </CardContent>
-          </Card>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+          >
+            <Card>
+              <CardHeader>
+                <CardTitle>{program.title}</CardTitle>
+                <CardDescription>{program.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p>{program.details}</p>
+              </CardContent>
+            </Card>
+          </motion.div>
         ))}
       </div>
-      <div className="mt-8 text-center">
+      <motion.div 
+        className="mt-8 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
         <Link href="/volunteer" className="text-blue-600 hover:underline">
           Want to get involved? Check out our volunteer opportunities!
         </Link>
-      </div>
+      </motion.div>
     </div>
   )
 }
