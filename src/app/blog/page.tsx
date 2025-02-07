@@ -66,7 +66,7 @@ export default function Blog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
           >
-            <Card className="bg-secondary/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 overflow-hidden">
+            <Card className="bg-secondary/50 backdrop-blur-sm  border-primary/50 transition-all duration-300 overflow-hidden">
               <div className="relative h-56 w-full">
                 <Image
                   src={post.image}
@@ -87,7 +87,7 @@ export default function Blog() {
                     {post.author.split(',')[0]}
                   </span>
                 </div>
-                <CardTitle className="text-xl font-semibold hover:text-primary transition-colors">
+                <CardTitle className="text-xl font-semibold text-primary transition-colors">
                   <Link href="#">{post.title}</Link>
                 </CardTitle>
               </CardHeader>
