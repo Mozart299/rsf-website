@@ -9,6 +9,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Loader2 } from "lucide-react"
+import TypingEffect from "@/lib/utils/typing-effect"
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -16,7 +17,6 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000))
     setIsSubmitting(false)
   }
@@ -28,28 +28,33 @@ export default function Contact() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <motion.h1 className="text-4xl font-bold mb-8 text-center" {...fadeInUp}>
-        Contact Us
-      </motion.h1>
+    <div className="max-w-6xl mx-auto px-4 py-12">
+      <motion.div className="text-center mb-12" {...fadeInUp}>
+        <h1 className="radiant-heading brand-text-gradient text-5xl mb-4">
+          <TypingEffect text="Get in Touch" />
+        </h1>
+        <p className="foundation-text text-muted-foreground text-sm">
+          WE'RE HERE TO HELP
+        </p>
+      </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
-          <Card>
+          <Card className="bg-secondary/50 backdrop-blur-sm border-border/50">
             <CardHeader>
-              <CardTitle>General Inquiries</CardTitle>
+              <CardTitle className="brand-text-gradient">General Inquiries</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-4">
               <div className="flex items-center">
-                <Mail className="mr-2 h-4 w-4" />
-                <span>info@charityorg.org</span>
+                <Mail className="mr-3 h-5 w-5 text-primary" />
+                <span>info@radiantsmilefoundation.org</span>
               </div>
               <div className="flex items-center">
-                <Phone className="mr-2 h-4 w-4" />
+                <Phone className="mr-3 h-5 w-5 text-primary" />
                 <span>(555) 123-4567</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="mr-2 h-4 w-4" />
+                <MapPin className="mr-3 h-5 w-5 text-primary" />
                 <span>123 Charity Lane, Helpville, CH 12345</span>
               </div>
             </CardContent>
@@ -57,17 +62,17 @@ export default function Contact() {
         </motion.div>
 
         <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
-          <Card>
+          <Card className="bg-secondary/50 backdrop-blur-sm border-border/50">
             <CardHeader>
-              <CardTitle>Donation Support</CardTitle>
+              <CardTitle className="brand-text-gradient">Donation Support</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-4">
               <div className="flex items-center">
-                <Mail className="mr-2 h-4 w-4" />
+                <Mail className="mr-3 h-5 w-5 text-primary" />
                 <span>donations@charityorg.org</span>
               </div>
               <div className="flex items-center">
-                <Phone className="mr-2 h-4 w-4" />
+                <Phone className="mr-3 h-5 w-5 text-primary" />
                 <span>(555) 987-6543</span>
               </div>
             </CardContent>
@@ -76,52 +81,88 @@ export default function Contact() {
       </div>
 
       <motion.div {...fadeInUp} transition={{ delay: 0.6 }}>
-        <Card>
+        <Card className="bg-secondary/50 backdrop-blur-sm border-border/50">
           <CardHeader>
-            <CardTitle>Send Us a Message</CardTitle>
+            <CardTitle className="brand-text-gradient">Send Us a Message</CardTitle>
           </CardHeader>
           <CardContent>
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <Label htmlFor="name">Name</Label>
-                <Input type="text" id="name" placeholder="Your Name" required />
+                <Label htmlFor="name" className="foundation-text text-xs">Name</Label>
+                <Input 
+                  type="text" 
+                  id="name" 
+                  placeholder="Your Name" 
+                  required 
+                  className="mt-2"
+                />
               </div>
               <div>
-                <Label htmlFor="email">Email</Label>
-                <Input type="email" id="email" placeholder="Your Email" required />
+                <Label htmlFor="email" className="foundation-text text-xs">Email</Label>
+                <Input 
+                  type="email" 
+                  id="email" 
+                  placeholder="Your Email" 
+                  required 
+                  className="mt-2"
+                />
               </div>
               <div>
-                <Label htmlFor="subject">Subject</Label>
-                <Input type="text" id="subject" placeholder="Message Subject" required />
+                <Label htmlFor="subject" className="foundation-text text-xs">Subject</Label>
+                <Input 
+                  type="text" 
+                  id="subject" 
+                  placeholder="Message Subject" 
+                  required 
+                  className="mt-2"
+                />
               </div>
               <div>
-                <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Your Message" required rows={5} />
+                <Label htmlFor="message" className="foundation-text text-xs">Message</Label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Your Message" 
+                  required 
+                  rows={5} 
+                  className="mt-2"
+                />
               </div>
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : "Send Message"}
+              <Button 
+                type="submit" 
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90" 
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                ) : (
+                  "Send Message"
+                )}
               </Button>
             </form>
           </CardContent>
         </Card>
       </motion.div>
 
-      <motion.div className="mt-12 text-center" {...fadeInUp} transition={{ delay: 0.8 }}>
-        <h2 className="text-2xl font-semibold mb-4">Follow Us</h2>
-        <div className="flex justify-center space-x-4">
-          <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+      <motion.div 
+        className="mt-12 text-center" 
+        {...fadeInUp} 
+        transition={{ delay: 0.8 }}
+      >
+        <h2 className="text-2xl font-semibold mb-6 brand-text-gradient">Connect With Us</h2>
+        <div className="flex justify-center space-x-6">
+          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
             <Facebook className="h-6 w-6" />
             <span className="sr-only">Facebook</span>
           </Link>
-          <Link href="#" className="text-gray-600 hover:text-blue-400 transition-colors">
+          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
             <Twitter className="h-6 w-6" />
             <span className="sr-only">Twitter</span>
           </Link>
-          <Link href="#" className="text-gray-600 hover:text-pink-600 transition-colors">
+          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
             <Instagram className="h-6 w-6" />
             <span className="sr-only">Instagram</span>
           </Link>
-          <Link href="#" className="text-gray-600 hover:text-blue-800 transition-colors">
+          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-6 w-6" />
             <span className="sr-only">LinkedIn</span>
           </Link>
@@ -130,4 +171,3 @@ export default function Contact() {
     </div>
   )
 }
-
