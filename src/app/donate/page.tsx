@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import TypingEffect from '@/lib/utils/typing-effect'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
@@ -33,10 +34,10 @@ export default function Donate() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="radiant-heading brand-text-gradient text-5xl mb-4">
-          Make a Difference
+        <h1 className="radiant-heading  text-5xl mb-4">
+          <TypingEffect text="Make a Difference" />
         </h1>
-        <p className="foundation-text text-muted-foreground text-sm mb-6">
+        <p className="foundation-text brand-text-gradient text-sm mb-6">
           EMPOWER CHANGE THROUGH GIVING
         </p>
         <p className="max-w-2xl mx-auto text-lg">
