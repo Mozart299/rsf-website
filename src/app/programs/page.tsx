@@ -29,9 +29,9 @@ export default function Programs() {
   ]
 
   return (
-    <div>
+    <div className="max-w-6xl mx-auto px-4 py-12">
       <motion.h1 
-        className="text-3xl font-bold mb-6"
+        className="radiant-heading text-4xl md:text-5xl mb-4 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -39,14 +39,14 @@ export default function Programs() {
         Our Programs
       </motion.h1>
       <motion.p 
-        className="mb-8"
+        className="foundation-text text-primary mb-8 text-center max-w-3xl mx-auto"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         At Charity Org, we run various programs to address critical needs in our communities and around the world. Here are some of our key initiatives:
       </motion.p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {programs.map((program, index) => (
           <motion.div
             key={index}
@@ -54,26 +54,26 @@ export default function Programs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
           >
-            <Card>
+            <Card className="border-2 border-primary/20 hover:border-primary transition-colors duration-300 shadow-lg">
               <CardHeader>
-                <CardTitle>{program.title}</CardTitle>
-                <CardDescription>{program.description}</CardDescription>
+                <CardTitle className="text-xl font-semibold">{program.title}</CardTitle>
+                <CardDescription className="text-muted-foreground">{program.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p>{program.details}</p>
+                <p className="text-muted-foreground leading-relaxed">{program.details}</p>
               </CardContent>
             </Card>
           </motion.div>
         ))}
       </div>
       <motion.div 
-        className="mt-8 text-center"
+        className="mt-12 text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <Link href="/volunteer" className="text-blue-600 hover:underline">
-          Want to get involved? Check out our volunteer opportunities!
+        <Link href="/volunteer" className="btn-primary px-6 py-3 rounded-full text-lg">
+          Get Involved
         </Link>
       </motion.div>
     </div>
