@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import TypingEffect from "@/lib/utils/typing-effect"
 
 export default function Home() {
   return (
@@ -20,10 +21,10 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">
-            Radiant Smile
+            <TypingEffect text="Radiant Smile" />    
           </h1>
           <p className="foundation-text text-lg md:text-xl text-primary mb-6">
-            FOUNDATION
+          <TypingEffect text="FOUNDATION" />   
           </p>
         </motion.div>
 

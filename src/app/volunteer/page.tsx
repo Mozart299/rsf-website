@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Checkbox } from '@/components/ui/checkbox'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import TypingEffect from '@/lib/utils/typing-effect'
 
 export default function Volunteer() {
   const [formData, setFormData] = useState({
@@ -70,7 +71,7 @@ export default function Volunteer() {
         className="text-center mb-12"
       >
         <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">
-          Volunteer With Us
+          <TypingEffect text="Volunteer With Us" />
         </h1>
         <p className="foundation-text text-primary mb-6">
           MAKE A DIFFERENCE

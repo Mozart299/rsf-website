@@ -6,6 +6,7 @@ import { CalendarDays } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import EventRegistrationModal from '../components/event-register-modal'
+import TypingEffect from '@/lib/utils/typing-effect'
 
 export default function Events() {
   const events = [
@@ -47,7 +48,7 @@ export default function Events() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Upcoming Events
+        <TypingEffect text="Upcoming Events" />
       </motion.h1>
       <motion.p 
         className="foundation-text text-primary mb-8 text-center"

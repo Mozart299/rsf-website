@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { LinkedinIcon, MailIcon, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import TypingEffect from '@/lib/utils/typing-effect'
 
 export default function Team() {
   const leadership = [
@@ -78,7 +79,7 @@ export default function Team() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">
-          Our Team
+          <TypingEffect text="Our Team" />
         </h1>
         <p className="foundation-text text-primary mb-6">
           DEDICATED TO MAKING A DIFFERENCE

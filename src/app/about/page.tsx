@@ -2,12 +2,15 @@
 
 import Link from 'next/link'
 import AnimatedSection from '../components/animatedsection'
+import TypingEffect from '@/lib/utils/typing-effect'
 
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <AnimatedSection>
-        <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">About Our Foundation</h1>
+        <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">
+          <TypingEffect text="About Our Foundation" />
+        </h1>
         <p className="foundation-text text-primary mb-8">CREATING POSITIVE CHANGE</p>
         <p className="mb-8 text-lg text-muted-foreground">
           Our foundation was founded in 2010 with a mission to create positive change in our community and around the world.
