@@ -27,13 +27,13 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background border-b">
-      <div className="container mx-auto max-w-7xl flex justify-between items-center p-4">
+      <div className="container mx-auto max-w-7xl flex justify-between items-center p-2">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/RSF-logo.png"
+            src="/assets/images/RSF-logo.png"
             alt="Radiant Smile Foundation"
-            width={120}
-            height={120}
+            width={160}
+            height={160}
             className="object-contain"
             priority
           />
