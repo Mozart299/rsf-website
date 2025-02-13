@@ -9,24 +9,54 @@ import TypingEffect from '@/lib/utils/typing-effect'
 export default function Programs() {
   const programs = [
     {
-      title: "Education for All",
-      description: "Providing access to quality education for underprivileged children.",
-      details: "Our Education for All program aims to break the cycle of poverty through education. We provide school supplies, uniforms, and support for teachers in underserved communities."
+      title: "Educational Support",
+      description: "Empowering through comprehensive educational resources and opportunities.",
+      details: "We provide school supplies, scholarships, tutoring programs, literacy initiatives, and digital learning centers to ensure quality education reaches every student in need."
     },
     {
-      title: "Healthcare Outreach",
-      description: "Bringing essential healthcare services to remote areas.",
-      details: "Through mobile clinics and telemedicine, we ensure that even the most isolated communities have access to basic healthcare services, vaccinations, and health education."
+      title: "Health & Wellness",
+      description: "Promoting community health through comprehensive care programs.",
+      details: "Our services include regular health check-ups, vaccination drives, nutritional support, and health awareness campaigns to build healthier communities."
     },
     {
-      title: "Environmental Conservation",
-      description: "Protecting our planet for future generations.",
-      details: "Our conservation efforts include reforestation projects, community-based recycling programs, and education initiatives to promote sustainable living practices."
+      title: "Mental Health Support",
+      description: "Supporting emotional well-being through professional care.",
+      details: "We offer professional counseling services, stress management workshops, and facilitate support groups for individuals dealing with mental health challenges."
     },
     {
-      title: "Disaster Relief",
-      description: "Rapid response and long-term support for communities affected by disasters.",
-      details: "When disaster strikes, we mobilize quickly to provide emergency supplies, temporary shelter, and long-term rebuilding assistance to help communities recover and become more resilient."
+      title: "Skill Development",
+      description: "Building capabilities for sustainable livelihoods.",
+      details: "From vocational training to life skills workshops and business management education, we empower individuals with tools for self-sufficiency."
+    },
+    {
+      title: "Community Empowerment",
+      description: "Strengthening communities through sustainable initiatives.",
+      details: "Our projects include clean water initiatives, microfinance programs, sustainable agriculture, and community clean-up drives."
+    },
+    {
+      title: "Emergency Aid",
+      description: "Rapid response support for communities in crisis.",
+      details: "We provide crisis response, essential supplies distribution, and temporary shelter support for communities affected by disasters."
+    },
+    {
+      title: "Cultural Exchange",
+      description: "Fostering global understanding and solidarity.",
+      details: "Through volunteer exchanges and cultural events, we promote mutual understanding and celebrate diversity across communities."
+    },
+    {
+      title: "Advocacy & Support",
+      description: "Championing positive change through awareness and action.",
+      details: "We run awareness campaigns, engage in policy advocacy, and provide parenting workshops to support sustainable community development."
+    },
+    {
+      title: "Volunteer Programs",
+      description: "Creating opportunities for meaningful community service.",
+      details: "We offer local volunteering opportunities and organize outreach trips for hands-on community support."
+    },
+    {
+      title: "Fundraising Initiatives",
+      description: "Supporting our mission through community engagement.",
+      details: "From charity runs to auctions and community events, we create opportunities for everyone to contribute to our cause."
     }
   ]
 
@@ -38,25 +68,25 @@ export default function Programs() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="radiant-heading  text-5xl mb-4">
+        <h1 className="radiant-heading text-5xl mb-4">
           <TypingEffect text="Our Programs" />
         </h1>
-        <p className="foundation-text brand-text-gradient  text-sm mb-6">
+        <p className="foundation-text brand-text-gradient text-sm mb-6">
           CREATING LASTING IMPACT
         </p>
         <p className="max-w-2xl mx-auto text-lg">
-          At Charity Org, we run various programs to address critical needs in our communities 
-          and around the world. Here are some of our key initiatives:
+          We offer a comprehensive range of programs designed to address critical needs 
+          and create sustainable positive change in communities worldwide. Explore our key initiatives:
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map((program, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 * (index + 1) }}
+            transition={{ duration: 0.5, delay: 0.1 * (index + 1) }}
           >
             <Card className="bg-secondary/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 h-full">
               <CardHeader>

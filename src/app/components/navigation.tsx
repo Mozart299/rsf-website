@@ -21,7 +21,7 @@ const Navigation = () => {
     { href: "/volunteer", label: "Volunteer" },
     { href: "/donate", label: "Donate" },
     { href: "/team", label: "Team" },
-    { href: "/blog", label: "Blog" },
+    // { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ]
 

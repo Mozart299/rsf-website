@@ -51,11 +51,11 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-primary" />
-                <span>(555) 123-4567</span>
+                <span>+(256) 782 436 190</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="mr-3 h-5 w-5 text-primary" />
-                <span>123 Charity Lane, Helpville, CH 12345</span>
+                <span>Kampala, Uganda</span>
               </div>
             </CardContent>
           </Card>
@@ -69,11 +69,11 @@ export default function Contact() {
             <CardContent className="space-y-4">
               <div className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-primary" />
-                <span>donations@charityorg.org</span>
+                <span>donations@radiantsmilefoundation.org</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-3 h-5 w-5 text-primary" />
-                <span>(555) 987-6543</span>
+                <span>+(256) 782 436 190</span>
               </div>
             </CardContent>
           </Card>
@@ -150,19 +150,19 @@ export default function Contact() {
       >
         <h2 className="text-2xl font-semibold mb-6 brand-text-gradient">Connect With Us</h2>
         <div className="flex justify-center space-x-6">
-          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://www.facebook.com/profile.php?id=100083832870969" className="text-muted-foreground hover:text-primary transition-colors">
             <Facebook className="h-6 w-6" />
             <span className="sr-only">Facebook</span>
           </Link>
-          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://x.com/RSF_UG" className="text-muted-foreground hover:text-primary transition-colors">
             <Twitter className="h-6 w-6" />
             <span className="sr-only">Twitter</span>
           </Link>
-          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://www.instagram.com/radiantsmilefoundation" className="text-muted-foreground hover:text-primary transition-colors">
             <Instagram className="h-6 w-6" />
             <span className="sr-only">Instagram</span>
           </Link>
-          <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <Link href="https://www.linkedin.com/company/healing-hearts-international/" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="h-6 w-6" />
             <span className="sr-only">LinkedIn</span>
           </Link>

@@ -9,64 +9,89 @@ import Image from 'next/image'
 import TypingEffect from '@/lib/utils/typing-effect'
 
 export default function Team() {
-  const leadership = [
-    {
-      name: "Sarah Johnson",
-      role: "Executive Director",
-      bio: "Sarah brings 15 years of nonprofit leadership experience and a passion for creating lasting social impact.",
-      image: "/api/placeholder/400/400",
-      linkedin: "#",
-      email: "sarah@radiantsmile.org"
-    },
-    {
-      name: "Michael Chen",
-      role: "Director of Operations",
-      bio: "Michael oversees our day-to-day operations and ensures our programs run efficiently and effectively.",
-      image: "/api/placeholder/400/400",
-      linkedin: "#",
-      email: "michael@radiantsmile.org"
-    },
-    {
-      name: "Dr. Lisa Patel",
-      role: "Medical Programs Director",
-      bio: "Dr. Patel leads our healthcare initiatives and brings extensive experience in community health programs.",
-      image: "/api/placeholder/400/400",
-      linkedin: "#",
-      email: "lisa@radiantsmile.org"
-    }
-  ]
+  // const leadership = [
+  //   {
+  //     name: "Sarah Johnson",
+  //     role: "Executive Director",
+  //     bio: "Sarah brings 15 years of nonprofit leadership experience and a passion for creating lasting social impact.",
+  //     image: "/api/placeholder/400/400",
+  //     linkedin: "#",
+  //     email: "sarah@radiantsmile.org"
+  //   },
+  //   {
+  //     name: "Michael Chen",
+  //     role: "Director of Operations",
+  //     bio: "Michael oversees our day-to-day operations and ensures our programs run efficiently and effectively.",
+  //     image: "/api/placeholder/400/400",
+  //     linkedin: "#",
+  //     email: "michael@radiantsmile.org"
+  //   },
+  //   {
+  //     name: "Dr. Lisa Patel",
+  //     role: "Medical Programs Director",
+  //     bio: "Dr. Patel leads our healthcare initiatives and brings extensive experience in community health programs.",
+  //     image: "/api/placeholder/400/400",
+  //     linkedin: "#",
+  //     email: "lisa@radiantsmile.org"
+  //   }
+  // ]
 
   const teamMembers = [
     {
-      name: "David Wilson",
-      role: "Education Program Manager",
+      name: "Muwanguzi Racheal Hope",
+      role: "Executive Director",
       image: "/api/placeholder/400/400"
     },
     {
-      name: "Maria Rodriguez",
+      name: "Ashaba Joshua Jasper",
       role: "Volunteer Coordinator",
       image: "/api/placeholder/400/400"
     },
     {
-      name: "James Taylor",
-      role: "Community Outreach",
+      name: "Nuwasasira Martha Shalom",
+      role: "Finance Director",
       image: "/api/placeholder/400/400"
     },
     {
-      name: "Aisha Hassan",
+      name: "Tumwesigye Jeremiah",
+      role: "General Secretary",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Ssendegeya Kyeyune Peter",
+      role: "Marketing & Communications Director",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Kobusingye Natasha Phiona",
+      role: "Events Coordinator",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Nagganda Gloria Mulwanya",
+      role: "Operations Director",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Mwebaza Doris Kasozi",
+      role: "Teams Coordinator",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Namuyomba Nabilah Birungi",
+      role: "Administrative Assistant",
+      image: "/api/placeholder/400/400"
+    },
+    {
+      name: "Ahereza Austin",
       role: "Grant Writer",
       image: "/api/placeholder/400/400"
-    },
+    },   
     {
-      name: "Tom Bradley",
-      role: "Finance Manager",
+      name: "Debbie",
+      role: "Volunteer Coordinator",
       image: "/api/placeholder/400/400"
     },
-    {
-      name: "Emma Lewis",
-      role: "Communications Director",
-      image: "/api/placeholder/400/400"
-    }
   ]
 
   return (
@@ -91,7 +116,7 @@ export default function Team() {
       </motion.div>
 
       {/* Leadership Section */}
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -132,7 +157,7 @@ export default function Team() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Team Members Section */}
       <motion.section
@@ -141,7 +166,7 @@ export default function Team() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="mb-16"
       >
-        <h2 className="text-2xl font-semibold mb-8 text-center">Team Members</h2>
+        <h2 className="text-2xl font-semibold mb-8 text-center">Administrators</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {teamMembers.map((member, index) => (
             <motion.div
