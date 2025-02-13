@@ -138,10 +138,10 @@ export default function Donate() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <p className="text-sm text-muted-foreground">
+        {/* <p className="text-sm text-muted-foreground">
           Our charity is registered as a 501(c)(3) non-profit organization. 
           All donations are tax-deductible to the extent allowed by law.
-        </p>
+        </p> */}
       </motion.div>
     </div>
   )

@@ -21,10 +21,10 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="radiant-heading text-4xl md:text-5xl lg:text-6xl mb-2">
-            <TypingEffect text="Radiant Smile" />    
+            <TypingEffect text="Radiant Smile" />
           </h1>
           <p className="foundation-text text-lg md:text-xl text-primary mb-6">
-          <TypingEffect text="FOUNDATION" />   
+            <TypingEffect text="FOUNDATION" />
           </p>
         </motion.div>
 
@@ -46,8 +46,7 @@ export default function Home() {
           >
             <h2 className="text-xl md:text-2xl font-semibold mb-4">Our Mission</h2>
             <p className="text-base md:text-lg text-muted-foreground">
-              To create lasting change by addressing critical needs in education, healthcare, environmental conservation,
-              and disaster relief.
+              To embody compassion, support, and love to vulnerable communities, especially children, globally.
             </p>
           </motion.div>
           <motion.div
@@ -56,10 +55,9 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h2 className="text-xl md:text-2xl font-semibold mb-4">Our Impact</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4">Our Vision</h2>
             <p className="text-base md:text-lg text-muted-foreground">
-              Last year, we helped over 100,000 people across 20 countries, providing education, healthcare, and disaster
-              relief.
+              To be a leading international charity organization that significantly improves the lives of children and vulnerable communities worldwide.
             </p>
           </motion.div>
         </div>
@@ -82,11 +80,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            <Link 
-              href="/about" 
+            <Link
+              href="/about"
               className="inline-flex items-center text-primary hover:text-primary/80 text-lg transition duration-300"
             >
-              Learn More About Us 
+              Learn More About Us
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </motion.div>
