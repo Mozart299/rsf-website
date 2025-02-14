@@ -40,57 +40,57 @@ export default function Team() {
     {
       name: "Muwanguzi Racheal Hope",
       role: "Executive Director",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/hope.JPG"
     },
     {
       name: "Ashaba Joshua Jasper",
       role: "Volunteer Coordinator",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/jasper.JPG"
     },
     {
       name: "Nuwasasira Martha Shalom",
       role: "Finance Director",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/martha.JPG"
     },
     {
       name: "Tumwesigye Jeremiah",
       role: "General Secretary",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/jerry.JPG"
     },
     {
       name: "Ssendegeya Kyeyune Peter",
       role: "Marketing & Communications Director",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/peter.JPG"
     },
     {
       name: "Kobusingye Natasha Phiona",
       role: "Events Coordinator",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/natasha.JPG"
     },
     {
       name: "Nagganda Gloria Mulwanya",
       role: "Operations Director",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/gloria.JPG"
     },
     {
       name: "Mwebaza Doris Kasozi",
       role: "Teams Coordinator",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/doris.JPG"
     },
     {
       name: "Namuyomba Nabilah Birungi",
       role: "Administrative Assistant",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/nabilah.JPG"
     },
     {
       name: "Ahereza Austin",
       role: "Grant Writer",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/austin.JPG"
     },   
     {
       name: "Debbie",
       role: "Volunteer Coordinator",
-      image: "/api/placeholder/400/400"
+      image: "/assets/images/team/debbie.JPG"
     },
   ]
 
