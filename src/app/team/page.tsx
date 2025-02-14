@@ -85,7 +85,7 @@ export default function Team() {
     {
       name: "Ahereza Austin",
       role: "Grant Writer",
-      image: "/assets/images/team/austin.JPG"
+      image: "/assets/images/team/austin.jpeg"
     },   
     {
       name: "Debbie",
