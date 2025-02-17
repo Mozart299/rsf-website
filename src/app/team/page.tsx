@@ -80,7 +80,7 @@ export default function Team() {
     {
       name: "Namuyomba Nabilah Birungi",
       role: "Administrative Assistant",
-      image: "/assets/images/team/nabilah.JPG"
+      image: "/assets/images/team/nabilah.jpeg"
     },
     {
       name: "Ahereza Austin",
