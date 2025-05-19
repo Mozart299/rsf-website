@@ -67,7 +67,7 @@ export default function Events() {
                   src={event.image}
                   alt={event.title}
                   width={300}
-                  height={200}
+                  height={500}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                   loading="lazy"
                 />
