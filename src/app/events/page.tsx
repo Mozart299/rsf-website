@@ -10,31 +10,10 @@ import TypingEffect from '@/lib/utils/typing-effect'
 export default function Events() {
   const events = [
     {
-      title: "Annual Charity Gala",
-      date: "September 15, 2023",
-      description: "Join us for an evening of celebration and fundraising for our Education for All program.",
-      location: "Grand Hotel, Downtown",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      title: "Community Health Fair",
-      date: "October 8, 2023",
-      description: "Free health screenings and wellness workshops for the community.",
-      location: "Central Park",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      title: "Earth Day Clean-Up",
-      date: "April 22, 2024",
-      description: "Help us clean up our local parks and waterways. Every piece of litter counts!",
-      location: "Various locations",
-      image: "/api/placeholder/300/200"
-    },
-    {
-      title: "Virtual 5K Run/Walk",
-      date: "May 1-7, 2024",
-      description: "Participate from anywhere in the world to support our Healthcare Outreach program.",
-      location: "Virtual Event",
+      title: "Back to School Outreach",
+      date: "June 1, 2025",
+      description: "We are actively collecting donations of school materials to support orphaned and vulnerable children of all ages",
+      location: "In Need Home, Namuwongo",
       image: "/api/placeholder/300/200"
     }
   ]
