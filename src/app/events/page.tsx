@@ -14,7 +14,7 @@ export default function Events() {
       date: "June 1, 2025",
       description: "We are actively collecting donations of school materials to support orphaned and vulnerable children of all ages",
       location: "In Need Home, Namuwongo",
-      image: "/api/placeholder/300/200"
+      image: "/assets/images/back-to-school-event-banner.jpeg"
     }
   ]
 
